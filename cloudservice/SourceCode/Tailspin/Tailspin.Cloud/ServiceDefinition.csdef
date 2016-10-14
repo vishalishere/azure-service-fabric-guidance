@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ServiceDefinition name="Tailspin.Cloud" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition" schemaVersion="2012-05.1.7">
+<ServiceDefinition name="Tailspin.Cloud" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition" schemaVersion="2015-04.2.6">
   <WebRole name="Tailspin.Web" enableNativeCodeExecution="true">
     <Sites>
       <Site name="Web">
@@ -13,6 +13,8 @@
       <Setting name="PublicSurveyWebsiteUrl" />
       <Setting name="TraceEventTypeFilter" />
       <Setting name="ExtensionsPath" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Caching.Loglevel"/>
     </ConfigurationSettings>
     <Certificates>
       <Certificate name="localhost" storeLocation="LocalMachine" storeName="My" />
@@ -21,7 +23,6 @@
       <InputEndpoint name="HttpsIn" protocol="https" port="443" certificate="localhost" />
     </Endpoints>
     <Imports>
-      <Import moduleName="Diagnostics" />
       <Import moduleName="Caching" />
       <Import moduleName="RemoteAccess" />
     </Imports>
@@ -40,12 +41,12 @@
     <ConfigurationSettings>
       <Setting name="DataConnectionString" />
       <Setting name="TraceEventTypeFilter" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" />
     </ConfigurationSettings>
     <Endpoints>
       <InputEndpoint name="HttpIn" protocol="http" port="80" />
     </Endpoints>
     <Imports>
-      <Import moduleName="Diagnostics" />
       <Import moduleName="RemoteAccess" />
     </Imports>
   </WebRole>
@@ -53,9 +54,9 @@
     <ConfigurationSettings>
       <Setting name="DataConnectionString" />
       <Setting name="TraceEventTypeFilter" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" />
     </ConfigurationSettings>
     <Imports>
-      <Import moduleName="Diagnostics" />
       <Import moduleName="RemoteAccess" />
       <Import moduleName="RemoteForwarder" />
     </Imports>

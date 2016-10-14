@@ -3,6 +3,7 @@
     using System.Configuration;
     using System.Globalization;
     using Microsoft.WindowsAzure;
+    using Microsoft.Azure;
 
     public static class CloudConfiguration
     {

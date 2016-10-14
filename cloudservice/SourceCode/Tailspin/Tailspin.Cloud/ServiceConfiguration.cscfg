@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ServiceConfiguration serviceName="Tailspin.Cloud" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" schemaVersion="2012-05.1.7">
+<ServiceConfiguration serviceName="Tailspin.Cloud" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" schemaVersion="2015-04.2.6">
   <Role name="Tailspin.Web">
     <Instances count="1" />
     <ConfigurationSettings>
@@ -16,6 +16,7 @@
       <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="pnptest1" />
       <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBnQYJKoZIhvcNAQcDoIIBjjCCAYoCAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCEHWOp04muiaOTrqPzeIsGRIwDQYJKoZIhvcNAQEBBQAEggEAJXuBHTd/1U3uHEMpPQ0rwOnpFu2NyUkNEzBxHv2VhFcR52bRVWJUqBbe8wZCjwmNqZ2w+8myMtIU0ziSfOgVEwyD5c2FBfjRYJV3z52MLkPNIWfJZGcpq56ckOfx1frntRAstHljY4Sc92Vq28+0wNhZzXcmEvFyGphD4G9yb8DjuttaABObGIKc5/B6PcUuzXzOTsH/PZADrKlhnc2/C7ijk3gn4rLRUyzSgfqbrvJp3+2yQdCJ9keHbfcBBsyJtZuKEW5Tu3RHIzHMHqOw9OnAoVvep81hQQgLptEgcD4XPDiPJ1GO3mmXSbvmD9UlYCrc8q+KiyN19JGs1CbfqDAzBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECAx5Q1/0qCf2gBDewxzBSSN9S+HL3gUeGpyD" />
       <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2013-09-24T23:59:59.0000000-07:00" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Caching.DiagnosticLevel" value="" />
     </ConfigurationSettings>
     <Certificates>
       <Certificate name="localhost" thumbprint="5A074D678466F59DBD063D1A98B1791474723365" thumbprintAlgorithm="sha1" />
